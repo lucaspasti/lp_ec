@@ -1,0 +1,74 @@
+{
+  "shared": { "viewCases": "See success stories" },
+  "hero": {
+    "title": "Applied intelligence for infrastructure.",
+    "subtitle": "Specialized technical knowledge, data-driven intelligence and a systemic view of territory and logistics to deliver integrated, sustainable and economically viable solutions in engineering, planning and operations.",
+    "ctaPrimary": "Book a free assessment",
+    "ctaSecondary": "See success stories"
+  },
+  "problem": {
+    "tag": "From paper to reality: where solutions get lost",
+    "title": "What separates impactful solutions from those that never leave the paper:",
+    "subtitle": "Leaders and investors face three obstacles beyond the paper: strategic decisions without reliable data, operations that cannot sustain planned growth, and projects that stall due to lack of technical and regulatory legitimacy.",
+    "card1": {
+      "title": "Decisions without reliable data",
+      "desc": "Lengthy studies with little clarity, questionable projections and scattered data turn strategic choices into bets — leading to misallocated capital, missed deadlines and lost opportunities."
+    },
+    "card2": {
+      "title": "Operations that underperform",
+      "desc": "Underused assets, delayed permits and uncontrolled KPIs erode expected ROI. Without continuous operational intelligence, performance drops and regulatory risks accumulate."
+    },
+    "card3": {
+      "title": "Projects that don’t move forward",
+      "desc": "Complex regulations and analyses that don’t convince regulators keep billion-dollar projects in the drawer for years — immobilizing capital while windows of opportunity close."
+    }
+  },
+  "guide": {
+    "tag": "Each problem has a solution",
+    "title": "Three pillars. One goal: your project delivered.",
+    "subtitle": "From feasibility studies to real-time operational data, we provide integrated solutions that remove bottlenecks holding back infrastructure in Brazil.",
+    "card1": {
+      "title": "Strategic & Technical Consulting",
+      "desc": "Technically rigorous studies and projects with territorial vision and feasibility focus for transport, logistics and infrastructure."
+    },
+    "card2": {
+      "title": "Operations & Asset Management Support",
+      "desc": "Tools, processes and teams to ensure efficiency, compliance and value throughout operations."
+    },
+    "card3": {
+      "title": "Data Intelligence & Modeling",
+      "desc": "Tech solutions, econometric analyses and simulations to support strategies with precision and agility."
+    }
+  },
+  "social": { "title": "Results that speak for themselves" },
+  "actionPlan": {
+    "title": "How our partnership works",
+    "subtitle": "From assessment to delivery: a transparent process",
+    "step1": {
+      "title": "We understand your challenge",
+      "desc": "Strategic diagnosis to map bottlenecks and define the best path."
+    },
+    "step2": {
+      "title": "We design the solution",
+      "desc": "A tailored action plan with scope, methodology, realistic timelines and investment."
+    },
+    "step3": {
+      "title": "We deliver results",
+      "desc": "Execution with a dedicated team, real-time tracking and measurable impact."
+    }
+  },
+  "about": {
+    "title": "What makes us unique in the sector",
+    "items": {
+      "legitimacy": "Technical and institutional legitimacy — projects move forward with the rigor regulators and investors require.",
+      "speed": "Speed with precision — proprietary tech and agile methods to deliver in weeks what others take months.",
+      "partnership": "Integrated long-term partnership — Consulting + Operations + Data.",
+      "techDNA": "Tech with a consulting DNA — proprietary tools powering decisions."
+    }
+  },
+  "finalCTA": {
+    "headline": "Shall we take your project to the next level?",
+    "sub": "Discover how we can create value for your project.",
+    "cta": "Let’s talk"
+  }
+}

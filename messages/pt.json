@@ -1,0 +1,79 @@
+{
+  "shared": {
+    "viewCases": "Ver casos de sucesso"
+  },
+  "hero": {
+    "title": "Inteligência aplicada à infraestrutura.",
+    "subtitle": "Conhecimento técnico especializado, inteligência baseada em dados e uma visão sistêmica do território e da logística para entregar soluções integradas, sustentáveis e economicamente viáveis nos campos da engenharia, do planejamento e das operações.",
+    "ctaPrimary": "Agendar diagnóstico gratuito",
+    "ctaSecondary": "Ver casos de sucesso"
+  },
+  "problem": {
+    "tag": "Do papel à realidade: onde as soluções se perdem",
+    "title": "O que separa as soluções que geram impacto das que não saem do papel:",
+    "subtitle": "Gestores e investidores enfrentam três tipos de obstáculos que vão além do papel: decisões estratégicas sem dados confiáveis, operações que não sustentam o crescimento planejado, e projetos que travam por falta de legitimidade técnica e regulatória.",
+    "card1": {
+      "title": "Decisões sem dados confiáveis",
+      "desc": "Estudos extensos sem clareza, projeções questionáveis e dados dispersos transformam decisões estratégicas em apostas — resultando em capital mal alocado, prazos estourados e oportunidades perdidas."
+    },
+    "card2": {
+      "title": "Operações que não performam",
+      "desc": "Ativos subutilizados, licenças atrasadas e KPIs sem controle minam o ROI esperado. Sem inteligência operacional contínua, seu ativo opera abaixo do potencial e acumula riscos regulatórios."
+    },
+    "card3": {
+      "title": "Projetos que não avançam",
+      "desc": "Regulações complexas e análises que não convencem órgãos reguladores fazem projetos bilionários ficarem anos na gaveta — com capital imobilizado enquanto janelas de oportunidade fecham."
+    }
+  },
+  "guide": {
+    "tag": "Um problema, uma solução",
+    "title": "Três vertentes. Um objetivo: seu projeto acontecendo.",
+    "subtitle": "Do estudo de viabilidade aos dados operacionais em tempo real, oferecemos há mais de uma década soluções integradas que eliminam os gargalos que travam a infraestrutura no Brasil.",
+    "card1": {
+      "title": "Consultoria Estratégica e Técnica",
+      "desc": "Estudos e projetos com profundidade técnica, visão territorial e foco na viabilidade em transportes, logística e infraestrutura."
+    },
+    "card2": {
+      "title": "Operações e apoio à Gestão de Ativos",
+      "desc": "Ferramentas, processos e equipes para eficiência, conformidade e geração de valor ao longo da operação."
+    },
+    "card3": {
+      "title": "Inteligência de Dados e Modelagem",
+      "desc": "Soluções tecnológicas, análises econométricas e simulações para apoiar estratégias com precisão e agilidade."
+    }
+  },
+  "social": {
+    "title": "Resultados que falam por si"
+  },
+  "actionPlan": {
+    "title": "Como funciona nossa parceria",
+    "subtitle": "Do diagnóstico à entrega: um processo transparente",
+    "step1": {
+      "title": "Entendemos seu desafio",
+      "desc": "Diagnóstico estratégico para mapear gargalos e definir o melhor caminho."
+    },
+    "step2": {
+      "title": "Desenhamos a solução",
+      "desc": "Plano de ação customizado com escopo, metodologia, prazos realistas e investimento."
+    },
+    "step3": {
+      "title": "Entregamos resultados",
+      "desc": "Execução com equipe dedicada, acompanhamento em tempo real e impacto mensurável."
+    }
+  },
+  "about": {
+    "title": "O que nos torna únicos no setor",
+    "items": {
+      "legitimacy": "Legitimidade técnica e institucional — projetos que avançam porque têm o rigor que órgãos reguladores e investidores exigem.",
+      "speed": "Velocidade com precisão — tecnologia própria e metodologia ágil para entregar em semanas o que outros levam meses.",
+      "partnership": "Parceria integrada de longo prazo — Consultoria + Gestão + Dados, do papel à operação.",
+      "techDNA": "Tech com DNA de consultoria — ferramentas próprias que potencializam decisões."
+    }
+  },
+  "finalCTA": {
+    "headline": "Vamos levar seu projeto ao próximo nível?",
+    "sub": "Descubra como podemos gerar valor para o seu projeto.",
+    "cta": "Quero conversar"
+  }
+}
+

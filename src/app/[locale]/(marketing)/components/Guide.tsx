@@ -1,0 +1,38 @@
+// app/[locale]/(marketing)/components/Guide.tsx
+import Container from "@/components/ui/container";
+import { H2, Muted } from "@/components/ui/typography";
+import { useTranslations } from "next-intl";
+
+export default function Guide() {
+  const t = useTranslations("guide");
+  const cards: { title: string; desc: string }[] = [
+    { title: t("card1.title"), desc: t("card1.desc") },
+    { title: t("card2.title"), desc: t("card2.desc") },
+    { title: t("card3.title"), desc: t("card3.desc") },
+  ];
+
+  return (
+    <section className="bg-brand-light2 py-16">
+      <Container>
+        <div className="mb-6 text-sm font-medium uppercase tracking-wider text-brand-secondary">
+          {t("tag")}
+        </div>
+        <H2 className="mb-4">{t("title")}</H2>
+        <Muted className="mb-10 max-w-3xl">{t("subtitle")}</Muted>
+        <div className="grid gap-6 md:grid-cols-3">
+          {cards.map((c, i) => (
+            <div
+              key={i}
+              className="rounded-xl bg-white p-6 shadow-sm ring-1 ring-brand-secondary/10"
+            >
+              <div className="mb-2 text-lg font-semibold text-brand-primary">
+                {c.title}
+              </div>
+              <p className="text-brand-text/80">{c.desc}</p>
+            </div>
+          ))}
+        </div>
+      </Container>
+    </section>
+  );
+}
