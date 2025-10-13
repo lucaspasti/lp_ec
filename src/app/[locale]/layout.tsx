@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Poppins } from "next/font/google";
-import "./global.css";
+import "./globals.css";
 import { ReactNode } from "react";
 import { ModeToggle } from "@/components/mode-toggle";
 
