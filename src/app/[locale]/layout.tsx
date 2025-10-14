@@ -2,11 +2,9 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import { ThemeProvider } from "@/components/theme-provider";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ReactNode } from "react";
-import { ModeToggle } from "@/components/mode-toggle";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -37,19 +35,10 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body className={poppins.className}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <NextIntlClientProvider messages={messages}>
-            {children}
-            <div className="fixed bottom-4 left -4">
-              <ModeToggle />
-            </div>
-          </NextIntlClientProvider>
-        </ThemeProvider>
+        <NextIntlClientProvider messages={messages}>
+          {children}
+          <div className="fixed bottom-4 left -4"></div>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

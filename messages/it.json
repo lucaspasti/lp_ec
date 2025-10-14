@@ -1,0 +1,88 @@
+{
+  "shared": { "viewCases": "Vedi casi di successo" },
+  "hero": {
+    "title": "Intelligenza applicata alle infrastrutture.",
+    "subtitle": "Conoscenza tecnica specializzata, intelligenza basata sui dati e una visione sistemica del territorio e della logistica per offrire soluzioni integrate, sostenibili ed economicamente valide in ingegneria, pianificazione e operazioni.",
+    "ctaPrimary": "Prenota una consulenza gratuita",
+    "ctaSecondary": "Vedi casi di successo"
+  },
+  "problem": {
+    "tag": "Dalla carta alla realtà: dove le soluzioni si perdono",
+    "title": "Cosa separa le soluzioni di impatto da quelle che non lasciano mai la carta:",
+    "subtitle": "Leader e investitori affrontano tre ostacoli oltre la teoria: decisioni strategiche senza dati affidabili, operazioni che non sostengono la crescita prevista e progetti che si bloccano per mancanza di legittimità tecnica e normativa.",
+    "card1": {
+      "title": "Decisioni senza dati affidabili",
+      "desc": "Studi lunghi e poco chiari, proiezioni discutibili e dati dispersi trasformano le scelte strategiche in scommesse — portando a capitali mal allocati, scadenze mancate e opportunità perse."
+    },
+    "card2": {
+      "title": "Operazioni con prestazioni insufficienti",
+      "desc": "Asset sottoutilizzati, permessi ritardati e KPI fuori controllo erodono il ROI previsto. Senza un’intelligenza operativa continua, le prestazioni calano e i rischi normativi aumentano."
+    },
+    "card3": {
+      "title": "Progetti che non avanzano",
+      "desc": "Regolamenti complessi e analisi che non convincono gli enti di controllo tengono progetti da miliardi di dollari nei cassetti per anni — immobilizzando capitali mentre le finestre di opportunità si chiudono."
+    }
+  },
+  "guide": {
+    "tag": "Ogni problema ha una soluzione",
+    "title": "Tre pilastri. Un obiettivo: il tuo progetto realizzato.",
+    "subtitle": "Dagli studi di fattibilità ai dati operativi in tempo reale, forniamo soluzioni integrate che eliminano i colli di bottiglia che frenano le infrastrutture in Brasile.",
+    "card1": {
+      "title": "Consulenza Strategica e Tecnica",
+      "desc": "Studi e progetti tecnicamente rigorosi, con visione territoriale e focus sulla fattibilità per trasporti, logistica e infrastrutture."
+    },
+    "card2": {
+      "title": "Supporto alle Operazioni e alla Gestione degli Asset",
+      "desc": "Strumenti, processi e team per garantire efficienza, conformità e valore durante tutte le fasi operative."
+    },
+    "card3": {
+      "title": "Intelligenza e Modellazione dei Dati",
+      "desc": "Soluzioni tecnologiche, analisi econometriche e simulazioni per supportare le strategie con precisione e agilità."
+    },
+    "cta": "Parliamone"
+  },
+  "social": { "title": "Risultati che parlano da soli" },
+  "actionPlan": {
+    "title": "Come funziona la nostra collaborazione",
+    "subtitle": "Dalla valutazione alla consegna: un processo trasparente",
+    "step1": {
+      "title": "Comprendiamo la tua sfida",
+      "desc": "Diagnosi strategica per mappare i colli di bottiglia e definire il percorso migliore."
+    },
+    "step2": {
+      "title": "Progettiamo la soluzione",
+      "desc": "Un piano d’azione su misura con ambito, metodologia, tempistiche realistiche e investimento."
+    },
+    "step3": {
+      "title": "Consegniamo risultati",
+      "desc": "Esecuzione con un team dedicato, monitoraggio in tempo reale e impatto misurabile."
+    }
+  },
+  "about": {
+    "title": "Cosa ci rende unici nel settore",
+    "items": {
+      "legitimacy": "Legittimità tecnica e istituzionale — i progetti avanzano con il rigore richiesto da enti regolatori e investitori.",
+      "speed": "Velocità con precisione — tecnologia proprietaria e metodi agili per consegnare in settimane ciò che altri impiegano mesi.",
+      "partnership": "Partnership integrata e a lungo termine — Consulenza + Operazioni + Dati.",
+      "techDNA": "Tecnologia con DNA consulenziale — strumenti proprietari che alimentano le decisioni."
+    }
+  },
+  "finalCTA": {
+    "headline": "Portiamo il tuo progetto al livello successivo?",
+    "sub": "Scopri come possiamo creare valore per il tuo progetto.",
+    "cta": "Parliamone"
+  },
+  "footer": {
+    "contactTitle": "Contatto",
+    "address": "R. Lauro Linhares, 2123 - Stanza 508 - Trindade, Florianópolis - SC, Brasile, 88036-003",
+    "email": "contato@ecprojetos.com",
+    "phone": "+55 (48) 99114-7704",
+    "rights": "Tutti i diritti riservati.",
+    "privacy": "Informativa sulla privacy",
+    "terms": "Termini di utilizzo",
+    "languageLabel": "Seleziona lingua",
+    "whatsappTitle": "Chatta su WhatsApp",
+    "instagramTitle": "Visita Instagram",
+    "linkedinTitle": "Visita LinkedIn"
+  }
+}

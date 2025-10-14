@@ -50,10 +50,13 @@ export const HeroParallax = ({
     useTransform(scrollYProgress, [0, 0.2], [-700, 100]),
     springConfig
   );
+
   return (
     <div
       ref={ref}
-      className="h-[135vh]  overflow-hidden  antialiased relative flex flex-col self-auto [perspective:700px] [transform-style:preserve-3d]"
+      className="h-[135vh] overflow-hidden antialiased relative flex flex-col self-auto 
+      [perspective:700px] [transform-style:preserve-3d]
+      bg-white"
     >
       <Header />
       <motion.div
@@ -63,7 +66,6 @@ export const HeroParallax = ({
           translateY,
           opacity,
         }}
-        className=""
       >
         <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-5">
           {firstRow.map((product) => (
@@ -96,7 +98,7 @@ export function Header() {
           duration: 0.5,
           ease: [0.4, 0.0, 0.2, 1],
         }}
-        className="text-2xl px-4 md:text-dm lg:text-md font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto "
+        className="text-2xl px-4 md:text-dm lg:text-md font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto"
       >
         <Highlight className="text-white dark:text-white">
           {t("title")}
@@ -106,6 +108,7 @@ export function Header() {
     </HeroHighlight>
   );
 }
+
 export const ProductCard = ({
   product,
   translate,
@@ -126,19 +129,27 @@ export const ProductCard = ({
         y: -20,
       }}
       key={product.title}
-      className="group/product h-96 w-[30rem] relative shrink-0"
+      className="group/product h-96 w-[30rem] relative shrink-0 border-1 rounded-xl border-blue-700"
     >
-      <a href={product.link} className="block group-hover/product:shadow-2xl ">
+      <a
+        href={product.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block group-hover/product:shadow-2xl"
+      >
         <img
           src={product.thumbnail}
           height="600"
           width="600"
-          className="object-cover object-left-top absolute h-full w-full inset-0"
+          className="object-cover object-left-top absolute h-full w-full inset-0 rounded-xl"
           alt={product.title}
         />
       </a>
-      <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none"></div>
-      <h2 className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-white">
+
+      {/* overlay azul translúcido */}
+      <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-90 bg-gradient-to-t from-blue-800 via-blue-500/80 to-transparent pointer-events-none transition-all duration-300 rounded-xl"></div>
+
+      <h2 className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-white text-lg font-semibold transition-opacity duration-300">
         {product.title}
       </h2>
     </motion.div>

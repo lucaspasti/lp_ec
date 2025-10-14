@@ -1,0 +1,83 @@
+LGPD PT
+Termos de Uso e Política de Privacidade
+Eagle Consultoria
+1. Aceitação
+Este é um contrato entre você, usuário dos serviços, e Eagle Consultoria Economica e de Engenharia LTDA – CNPJ:
+17.940.831/0001-46, doravante denominada simplesmente EC Projetos. Este “Termo de Uso” rege o uso do website e plataformas oferecidas pela EC Projetos seja para dispositivos móveis (Android, iOS), servidores, computadores pessoais (desktops) ou serviços web. Se você não concordar com estes termos, por favor, não use nossos serviços.
+
+O uso contínuo do website e plataformas da EC Projetos significa que o usuário aceitou todos os termos e concorda em cumpri-los. Caso o usuário seja menor de idade ou legalmente incapaz, será necessária a permissão de seus pais ou responsáveis, que também deverão concordar com estes mesmos termos e condições.
+
+2. Licença Limitada
+O usuário recebe uma licença limitada, não transferível, não exclusiva, livre de royalties e revogável para baixar, instalar, executar e utilizar o website e plataformas da Empresa em seu dispositivo. A Empresa concede uma licença exclusiva para uso, sem transferir os direitos sobre o produto.
+
+O website e plataformas devem ser utilizados exclusivamente pelo usuário. A venda, transferência, modificação, engenharia reversa ou distribuição, bem como a cópia de textos, imagens ou quaisquer partes nele contidas, é expressamente proibida.
+3. Alterações, Modificações e Rescisão
+A EC Projetos reserva-se o direito de, a qualquer tempo, modificar estes termos, seja incluindo, removendo ou alterando quaisquer de suas cláusulas. Tais modificações terão efeito imediato após a publicação. Ao continuar utilizando o website e plataformas após as alterações, o usuário aceita e concorda em cumprir os termos modificados.
+
+A EC Projetos pode, de tempos em tempos, modificar ou descontinuar (temporária ou permanentemente) a distribuição ou a atualização do website e plataformas, sem a obrigação de fornecer qualquer serviço de suporte.
+
+O usuário não poderá responsabilizar a EC Projetos ou seus representantes, executivos, afiliados, contratados ou licenciadores por quaisquer modificações, suspensões ou descontinuidade do website e plataformas.
+4. Consentimento para Coleta e Uso de Dados
+O usuário concorda que a EC Projetos pode coletar e usar dados técnicos de seu dispositivo, tais como especificações, configurações, versões de sistema operacional, tipo de conexão à internet, entre outros.
+5. Isenção de Garantias e Limitações de Responsabilidade
+O website e plataformas da EC Projetos estão em constante aprimoramento e podem conter erros, sendo fornecidos “no estado em que se encontram” e sob risco do usuário. Na extensão máxima permitida pela legislação aplicável, a EC Projetos e seus fornecedores isentam-se de quaisquer garantias e condições expressas ou implícitas, incluindo, sem limitação, garantias de comercialização, adequação a um propósito específico, titularidade e não violação no que diz respeito ao website e plataformas.
+
+A EC Projetos não garante que a operação do website e plataformas será contínua e sem defeitos. Exceto conforme estabelecido neste documento, não há outras garantias, condições ou promessas para o website e plataformas, expressas ou implícitas, e todas essas garantias, condições e promessas podem ser excluídas de acordo com o permitido por lei.
+
+A EC Projetos não se responsabiliza por perdas ou danos causados pelo uso do website e plataformas, nem garante que estarão livres de perda, interrupção, ataque, vírus, interferência, pirataria ou outra invasão de segurança.
+6. Tipos de Dados Coletados
+6.1 Consentimento A EC Projetos coleta dados de usuários que apenas visitam o site, bem como de usuários que desejam se cadastrar para uso das nossas plataformas. Os dados solicitados podem incluir: Nome completo, Endereço eletrônico (email), Telefone, Data de nascimento, CPF, Sexo, Local de residência, Endereço de cobrança.
+
+6.2 Dados de NavegaçãoAo acessar o site, coletamos seus dados de navegação por meio de “cookies” e outras tecnologias de rastreamento, que são identificadores transferidos para o seu navegador ou dispositivo que nos permitem reconhecer seu navegador ou dispositivo e informar como e quando as páginas em nossos serviços são visitadas e quantas pessoas as acessam. Essas tecnologias nos ajudam a melhorar nossos serviços e a sua experiência de usuário.
+
+6.3 Dados Sensíveis Dados sensíveis, conforme definido pela LGPD, são coletados apenas quando estritamente necessário e com o seu consentimento explícito, para finalidades específicas e legítimas.
+7. Finalidades do Tratamento dos Dados
+Os dados pessoais dos Usuários são coletados para as seguintes finalidades:
+
+Fornecer e melhorar nossos serviços;
+Personalizar a experiência do usuário;
+Processar transações;
+Enviar notificações e atualizações;
+Cumprir obrigações legais e regulatórias;
+Analisar e solucionar problemas técnicos;
+Garantir a segurança e integridade dos serviços.
+8. Compartilhamento de Dados
+Os dados pessoais dos Usuários podem ser compartilhados com terceiros apenas nas seguintes situações:
+
+Com parceiros e fornecedores de serviços, para a execução das atividades contratadas;
+Com entidades públicas e privadas, para cumprimento de obrigações legais e regulatórias;
+Com empresas do mesmo grupo econômico, para integração dos serviços oferecidos.
+
+Além disso, reservamo-nos o direito de acessar, ler, preservar e divulgar quaisquer dados que acreditamos serem necessários para cumprir uma obrigação legal, fazer cumprir nossos Termos de Uso e outros acordos, ou proteger os direitos, propriedade ou segurança da Empresa, nossos usuários ou outros.
+9. Direitos dos Titulares de Dados
+Os Usuários têm direito a: Acessar seus dados pessoais; Retificar dados imprecisos ou desatualizados; Excluir seus dados pessoais, nos casos previstos em lei; Confirmar se realizamos o tratamento de seus dados pessoais; Solicitar o bloqueio ou eliminação de dados desnecessários ou excessivos; Ser informado sobre com quais entidades públicas ou privadas compartilhamos seus dados; Restringir o processamento de seus dados pessoais; Solicitar a revisão de decisões tomadas unicamente com base em tratamento automatizado de dados; Opor-se ao tratamento de dados pessoais, caso não haja justificativa legal para continuarmos o tratamento; Solicitar informações sobre os critérios e procedimentos utilizados para tratamento automatizado; Retirar o consentimento a qualquer momento, sem comprometer a legalidade do tratamento realizado previamente.
+10. Armazenamento e Segurança dos Dados
+Os dados pessoais dos Usuários serão armazenados pelo tempo necessário para cumprir as finalidades para as quais foram coletados, inclusive para fins de cumprimento de obrigações legais, contratuais ou requisição de autoridades competentes. Adotamos medidas de segurança adequadas para proteger os dados pessoais contra acesso não autorizado, destruição, perda, alteração, comunicação ou difusão inadequadas.
+11. Política de Cookies
+Esta Política de Cookies explica o que são cookies, como os utilizamos, e suas opções em relação ao uso de cookies. Ao acessar e usar nosso site e nossas plataformas, você concorda com o uso de cookies conforme descrito nesta política.
+1. O que são Cookies? Cookies são pequenos arquivos de texto que são armazenados no seu navegador ou dispositivo quando você visita um site. Eles permitem que o site reconheça seu dispositivo e lembre-se de suas preferências e ações ao longo do tempo.
+2. Tipos de Cookies que Utilizamos Utilizamos diferentes tipos de cookies em nosso site:
+Cookies Necessários: Essenciais para que o site funcione corretamente. Permitem a navegação e o uso de funcionalidades básicas, como acesso a áreas seguras do site.
+Cookies de Desempenho: Coletam informações sobre como os Usuários utilizam o site, como as páginas visitadas e os links clicados. Esses cookies não coletam informações que identificam o Usuário e são usados para melhorar o funcionamento do site.
+Cookies de Funcionalidade: Permitem que o site se lembre de escolhas feitas pelo Usuário (como nome de usuário, idioma ou região) e proporcionam recursos melhorados e personalizados.
+Cookies de Publicidade: Utilizados para fornecer anúncios mais relevantes para o Usuário e seus interesses. Eles também são usados para limitar o número de vezes que você vê um anúncio e para medir a eficácia das campanhas publicitárias.
+Cookies de Terceiros: Colocados por terceiros para fornecer serviços, como análises de uso do site ou publicidade. Estes cookies estão sujeitos às políticas de privacidade desses terceiros.
+3. Como Utilizamos Cookies Os cookies são usados para os seguintes propósitos:
+Autenticação: Para lembrar suas informações de login e facilitar o acesso ao site.
+Segurança: Para proteger seus dados e identificar atividades maliciosas.
+Preferências do Usuário: Para armazenar suas preferências e configurações.
+Análise e Desempenho: Para analisar o uso do site e melhorar sua experiência.
+Publicidade: Para personalizar o conteúdo dos anúncios com base nos seus interesses.
+4. Gerenciamento de Cookies Você pode gerenciar e controlar o uso de cookies através das configurações do seu navegador. A maioria dos navegadores permite que você aceite ou rejeite cookies, apague cookies existentes e configure preferências para determinados sites. Veja abaixo como fazer isso nos navegadores mais comuns:
+Google Chrome: Gerenciamento de cookies no Chrome
+Mozilla Firefox: Gerenciamento de cookies no Firefox
+
+Safari: Gerenciamento de cookies no Safari
+Tenha em mente que, se você desativar cookies, algumas funcionalidades do site podem ser afetadas.
+5. Consentimento e Atualizações Ao continuar a usar nosso site e plataformas, você concorda com o uso de cookies conforme descrito nesta política. Reservamo-nos o direito de atualizar esta Política de Cookies a qualquer momento. Recomendamos que você revisite esta página regularmente para estar ciente de eventuais alterações. Ultima atualização 05/2024.
+12. Contato
+Se os Usuários tiverem dúvidas, comentários ou sugestões sobre os Termos de Uso, Política de Privacidade ou Política de Cookies, podem entrar em contato conosco através do e-mail contato@ecprojetos.com.br e/ou pelo telefone ou WhatsApp+55 (48) 99131-6900.
+
+13. Alterações na Política de Privacidade
+Esta Política de Privacidade poderá ser atualizada periodicamente para refletir mudanças em nossos processos de tratamento de dados pessoais. Recomendamos que os Usuários revisitem esta página regularmente para estar ciente de eventuais alterações. Caso sejam feitas alterações relevantes que requeiram um novo consentimento, os Usuários serão notificados e solicitados a fornecer novo consentimento. Esta Política de Privacidade é válida a partir de 05/2024
+EC Projetos agradece a confiança dos Usuários e reafirma seu compromisso em tratar os dados pessoais com responsabilidade e transparência.

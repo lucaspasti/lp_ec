@@ -1,8 +1,8 @@
 // app/[locale]/(marketing)/components/Guide.tsx
 "use client";
 
-import { Globe } from "@/components/ui/globe";
 import { H2, Muted } from "@/components/ui/typography";
+import { GlobeDemo } from "@/components/usable_globe";
 import { FileTextIcon, InputIcon, GlobeIcon } from "@radix-ui/react-icons";
 import { useTranslations } from "next-intl";
 
@@ -44,22 +44,19 @@ export default function Guide() {
   ];
 
   return (
-    <>
-      <div className="mb-6 text-xs font-bold uppercase tracking-widest text-brand-secondary/80">
-        {t("tag")}
-      </div>
-      <H2 className="mb-6 text-3xl md:text-4xl font-extrabold text-brand-primary drop-shadow-sm">
+    <div className="p-30 bg-gradient-to-t from-blue-400 via-blue-500 to-blue-600">
+      <H2 className="mb-6 text-3xl md:text-4xl font-extrabold text-white drop-shadow-sm">
         {t("title")}
       </H2>
-      <Muted className="mb-14 max-w-3xl text-base md:text-lg text-brand-text/70">
+      <Muted className="mb-14 max-w-3xl text-base md:text-lg text-white">
         {t("subtitle")}
       </Muted>
-      <div className="flex">
+      <div className="flex overflow-visible">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 md:p-6">
           {features.map((feature, i) => (
             <div
               key={feature.name}
-              className={`relative overflow-hidden rounded-lg border  p-6 shadow-sm ${
+              className={`relative overflow-hidden rounded-lg border bg-gray-200 p-6 shadow-sm ${
                 i === 2 ? "md:col-span-2" : ""
               }`}
             >
@@ -77,8 +74,8 @@ export default function Guide() {
             </div>
           ))}
         </div>
-        <Globe />
+        <GlobeDemo />
       </div>
-    </>
+    </div>
   );
 }

@@ -1,8 +1,14 @@
 "use client";
 import { HeroParallax } from "@/components/ui/hero-parallax";
+import { NavbarDemo } from "./Navbar";
 
 export default function Hero() {
-  return <HeroParallax products={products} />;
+  return (
+    <>
+      <NavbarDemo />
+      <HeroParallax products={products} />
+    </>
+  );
 }
 export const products = [
   {

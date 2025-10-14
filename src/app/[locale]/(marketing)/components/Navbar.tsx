@@ -1,95 +1,70 @@
 "use client";
-import { ModeToggle } from "@/components/mode-toggle";
 import {
   Navbar,
   NavBody,
-  NavItems,
   MobileNav,
   NavbarLogo,
-  NavbarButton,
   MobileNavHeader,
   MobileNavToggle,
-  MobileNavMenu,
 } from "@/components/ui/resizable-navbar";
 import { useState } from "react";
+import { FaWhatsapp, FaInstagram, FaLinkedin } from "react-icons/fa"; // ← ícones das redes
 
 export function NavbarDemo() {
-  const navItems = [
-    {
-      name: "Features",
-      link: "#features",
-    },
-    {
-      name: "Pricing",
-      link: "#pricing",
-    },
-    {
-      name: "Contact",
-      link: "#contact",
-    },
-  ];
-
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <div className="relative w-full">
-      <Navbar>
-        {/* Desktop Navigation */}
-        <NavBody>
-          <NavbarLogo />
-          <NavItems items={navItems} />
+    <Navbar>
+      <NavBody>
+        <NavbarLogo />
 
-          <div className="flex items-center gap-4">
-            <NavbarButton variant="secondary">Login</NavbarButton>
-            <NavbarButton variant="primary">Book a call</NavbarButton>
-          </div>
-        </NavBody>
-
-        {/* Mobile Navigation */}
-        <MobileNav>
-          <MobileNavHeader>
-            <NavbarLogo />
-            <MobileNavToggle
-              isOpen={isMobileMenuOpen}
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            />
-          </MobileNavHeader>
-
-          <MobileNavMenu
-            isOpen={isMobileMenuOpen}
-            onClose={() => setIsMobileMenuOpen(false)}
+        {/* Ícones de redes sociais */}
+        <div className="flex items-center gap-4">
+          {/* WhatsApp */}
+          <a
+            href="https://wa.me/554899114-7704"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Converse conosco no WhatsApp"
+            className="text-xl text-gray-700 hover:text-green-600 transition-colors"
           >
-            {navItems.map((item, idx) => (
-              <a
-                key={`mobile-link-${idx}`}
-                href={item.link}
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="relative text-neutral-600 dark:text-neutral-300"
-              >
-                <span className="block">{item.name}</span>
-              </a>
-            ))}
-            <div className="flex w-full flex-col gap-4">
-              <NavbarButton
-                onClick={() => setIsMobileMenuOpen(false)}
-                variant="primary"
-                className="w-full"
-              >
-                Login
-              </NavbarButton>
-              <NavbarButton
-                onClick={() => setIsMobileMenuOpen(false)}
-                variant="primary"
-                className="w-full"
-              >
-                Book a call
-              </NavbarButton>
-            </div>
-          </MobileNavMenu>
-        </MobileNav>
-      </Navbar>
+            <FaWhatsapp />
+          </a>
 
-      {/* Navbar */}
-    </div>
+          {/* Instagram */}
+          <a
+            href="https://www.instagram.com/ecprojetos_infra"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visite nosso Instagram"
+            className="text-xl text-gray-700 hover:text-pink-600 transition-colors"
+          >
+            <FaInstagram />
+          </a>
+
+          {/* LinkedIn */}
+          <a
+            href="https://www.linkedin.com/company/ecprojetos"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visite nosso LinkedIn"
+            className="text-xl text-gray-700 hover:text-blue-700 transition-colors"
+          >
+            <FaLinkedin />
+          </a>
+        </div>
+      </NavBody>
+
+      {/* Mobile nav */}
+      <MobileNav>
+        <MobileNavHeader>
+          <NavbarLogo />
+          <MobileNavToggle
+            isOpen={isMobileMenuOpen}
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          />
+        </MobileNavHeader>
+      </MobileNav>
+    </Navbar>
   );
 }

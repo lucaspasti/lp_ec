@@ -1,5 +1,6 @@
+import Example from "@/components/ex";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
-import { H2, Muted } from "@/components/ui/typography";
+import { H2 } from "@/components/ui/typography";
 import { useTranslations } from "next-intl";
 
 export default function ActionPlan() {
@@ -20,15 +21,15 @@ export default function ActionPlan() {
   ];
 
   return (
-    <div>
+    <div className="p-30 flex flex-col text-center">
       <H2 className="mb-6 text-3xl md:text-4xl font-extrabold text-brand-primary drop-shadow-sm">
         {t("title")}
       </H2>
-      <Muted className="mb-14 max-w-3xl text-base md:text-lg text-brand-text/70">
-        {t("subtitle")}
-      </Muted>
 
-      <HoverEffect items={projects} />
+      <div className="flex">
+        <HoverEffect items={projects} />
+        <Example />
+      </div>
     </div>
   );
 }

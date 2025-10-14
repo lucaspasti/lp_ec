@@ -1,8 +1,39 @@
 "use client";
 
-import { H2 } from "@/components/ui/typography";
+import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
-import { GlowCard } from "@/components/ui/spotlight-card"; // ajuste o caminho conforme sua estrutura
+import Image from "next/image";
+import { cn } from "@/lib/utils";
+import { AnimatedList } from "@/components/ui/animated-list";
+import { H2 } from "@/components/ui/typography";
+
+type BulletProps = {
+  children: React.ReactNode;
+  className?: string;
+};
+
+function BulletCard({ children, className }: BulletProps) {
+  return (
+    <figure
+      className={cn(
+        "relative mx-auto w-full cursor-pointer overflow-hidden rounded-2xl p-4",
+        "transition-all duration-200 ease-in-out hover:scale-[103%]",
+        "bg-white [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)]",
+        "dark:bg-transparent dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] dark:backdrop-blur-md dark:[border:1px_solid_rgba(255,255,255,.1)]",
+        className
+      )}
+    >
+      <div className="flex items-start gap-3">
+        <div className="flex size-9 items-center justify-center rounded-xl bg-brand-primary/10">
+          <span className="text-base">✨</span>
+        </div>
+        <figcaption className="text-base font-medium leading-snug dark:text-white">
+          {children}
+        </figcaption>
+      </div>
+    </figure>
+  );
+}
 
 export default function About() {
   const t = useTranslations("about");
@@ -14,32 +45,70 @@ export default function About() {
     t("items.techDNA"),
   ];
 
-  const colors: ("blue" | "purple" | "green" | "red" | "orange")[] = [
-    "blue",
-    "purple",
-    "purple",
-    "blue",
-  ];
+  // ---- in-view trigger ----
+  const sectionRef = useRef<HTMLElement | null>(null);
+  const [isInView, setIsInView] = useState(false);
+
+  useEffect(() => {
+    if (!sectionRef.current) return;
+
+    const once = { root: null, threshold: 0.3 };
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setIsInView(true);
+        observer.disconnect();
+      }
+    }, once);
+
+    observer.observe(sectionRef.current);
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
-    <section className="bg-brand-light2 py-16">
-      <H2 className="mb-8 text-brand-primary">{t("title")}</H2>
+    <section
+      ref={sectionRef}
+      className="relative text-center bg-gradient-to-t from-blue-400 via-blue-500 to-blue-600 py-16"
+      aria-label={t("title")}
+    >
+      <div className="mx-auto max-w-6xl px-4">
+        <H2 className="text-white">{t("title")}</H2>
 
-      <ul className="grid gap-6 md:grid-cols-2">
-        {bullets.map((b, i) => (
-          <GlowCard
-            key={i}
-            glowColor={colors[i % colors.length]}
-            customSize
-            className="p-5 bg-white/70 backdrop-blur-sm transition-transform duration-300 hover:scale-[1.02]"
-          >
-            <li className="flex items-start gap-2 text-brand-text/90">
-              <span className="text-xl text-brand-primary">✓</span>
-              <span>{b}</span>
-            </li>
-          </GlowCard>
-        ))}
-      </ul>
+        {/* layout lado a lado (imagem primeiro, lista depois) */}
+        <div className="mt-8 grid grid-cols-1 items-center md:grid-cols-2 gap-8 md:gap-16 xl:gap-24">
+          {/* coluna da imagem */}
+          <div className="flex justify-center md:justify-start md:pr-8 xl:pr-12">
+            <Image
+              src="/cgd.svg"
+              alt="cdg"
+              width={600}
+              height={400}
+              priority={false}
+              className="h-auto w-full max-w-[560px]"
+            />
+          </div>
+
+          {/* coluna da lista */}
+          <div className="relative md:pl-8 xl:pl-12">
+            <div className="relative flex h-[440px] w-full flex-col overflow-hidden p-2 text-left">
+              {isInView ? (
+                <AnimatedList>
+                  {bullets.map((b, i) => (
+                    <BulletCard key={i}>{b}</BulletCard>
+                  ))}
+                </AnimatedList>
+              ) : (
+                <div className="space-y-3 opacity-0">
+                  {bullets.map((b, i) => (
+                    <BulletCard key={i}>{b}</BulletCard>
+                  ))}
+                </div>
+              )}
+              <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-brand-light2" />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
