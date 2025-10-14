@@ -10,12 +10,19 @@ import { cubicBezier, motion, useReducedMotion } from "motion/react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
+/**
+ * Melhorias de layout e imagem
+ * - Grid responsivo: texto à esquerda, imagem à direita no desktop. No mobile empilha.
+ * - Espaçamento e alinhamento refinados.
+ * - Container da imagem com "glow" e leve animação.
+ * - Image otimizada com sizes e prioridade condicional.
+ * - Acessibilidade com aria-labelledby e alt melhor.
+ */
+
 type FinalCTAProps = {
   id?: string;
   className?: string;
 };
-
-
 
 const sectionVariants = {
   hidden: { opacity: 0, y: 16 },
@@ -39,8 +46,8 @@ export default function FinalCTA({
       aria-labelledby={`${id}-heading`}
       className={cn(
         // base
-        "relative overflow-hidden py-80",
-        // gradiente de fundo com melhor profundidade
+        "relative overflow-hidden py-24 sm:py-32",
+        // gradiente de fundo
         "bg-gradient-to-b from-brand-primary via-brand-primary to-brand-primary",
         className
       )}
@@ -59,7 +66,7 @@ export default function FinalCTA({
         <div className="absolute -top-32 left-1/2 h-[420px] w-[420px] -translate-x-1/2 rounded-full bg-white/10 blur-3xl" />
       </div>
 
-      {/* textura sutil para dar “grip” */}
+      {/* textura sutil */}
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 opacity-[0.08]"
@@ -77,47 +84,82 @@ export default function FinalCTA({
         <motion.div
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, amount: 0.4 }}
+          viewport={{ once: true, amount: 0.35 }}
           variants={sectionVariants}
-          className="mx-auto max-w-3xl text-center"
+          className="grid items-center gap-10 md:gap-14 lg:gap-16 md:grid-cols-2"
         >
-          <H2 className="mb-3 text-black drop-shadow-[0_1px_0_rgba(255,255,255,0.4)]">
-            {t("headline")}
-          </H2>
+          {/* Coluna de texto */}
+          <div className="text-center md:text-left">
+            <H2 className="mb-4 text-black drop-shadow-[0_1px_0_rgba(255,255,255,0.4)]">
+              {t("headline")}
+            </H2>
 
+            <motion.div
+              initial={reduce ? undefined : { opacity: 0, y: 8 }}
+              whileInView={reduce ? undefined : { opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.4, ease: "easeOut", delay: 0.05 }}
+            >
+              <Muted className="mx-auto md:mx-0 mb-8 max-w-2xl text-black/80">
+                {t("sub")}
+              </Muted>
+            </motion.div>
+
+            <motion.div
+              initial={reduce ? undefined : { opacity: 0, scale: 0.98 }}
+              whileInView={reduce ? undefined : { opacity: 1, scale: 1 }}
+              viewport={{ once: true, amount: 0.6 }}
+              transition={{ duration: 0.35, ease: [0, 0, 0.2, 1], delay: 0.08 }}
+              className="inline-flex"
+            >
+              <Button asChild className="bg-blue-600">
+                <a
+                  href="https://wa.me/5548991147704" // somente dígitos
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {t("cta", { default: "Entre em Contato" })}
+                </a>
+              </Button>
+            </motion.div>
+          </div>
+
+          {/* Coluna da imagem */}
           <motion.div
             initial={reduce ? undefined : { opacity: 0, y: 8 }}
             whileInView={reduce ? undefined : { opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.4, ease: "easeOut", delay: 0.05 }}
+            viewport={{ once: true, amount: 0.45 }}
+            transition={{ duration: 0.45, ease: "easeOut" }}
+            className="relative mx-auto w-full max-w-xl"
+            aria-hidden
           >
-            <Muted className="mx-auto mb-8 max-w-2xl text-black/80">
-              {t("sub")}
-            </Muted>
-          </motion.div>
-
-          <motion.div
-            initial={reduce ? undefined : { opacity: 0, scale: 0.98 }}
-            whileInView={reduce ? undefined : { opacity: 1, scale: 1 }}
-            viewport={{ once: true, amount: 0.6 }}
-            transition={{ duration: 0.35, ease: [0, 0, 0.2, 1], delay: 0.08 }}
-            className="inline-flex"
-          >
-            <Button asChild className="bg-blue-600">
-              <a
-                href="https://wa.me/554899114-7704"
-                target="_blank"
-                rel="noopener noreferrer"
+            {/* fundo com glow e moldura */}
+            <div className="absolute -inset-4 rounded-[32px] bg-white/10 blur-2xl" />
+            <div className="relative rounded-3xl border border-white/30 bg-white/70 p-4 shadow-xl backdrop-blur">
+              <motion.div
+                animate={reduce ? undefined : { y: [0, -6, 0] }}
+                transition={
+                  reduce
+                    ? undefined
+                    : { duration: 6, repeat: Infinity, ease: "easeInOut" }
+                }
               >
-                Entre em Contato
-              </a>
-            </Button>
+                <Image
+                  src="/flow_ec.svg"
+                  alt="Fluxo de trabalho da EC Projetos"
+                  width={960}
+                  height={720}
+                  className="h-auto w-full rounded-2xl"
+                  priority={false}
+                  sizes="(max-width: 768px) 88vw, (max-width: 1024px) 44vw, 520px"
+                />
+              </motion.div>
+            </div>
           </motion.div>
         </motion.div>
-        <Image src="flow_ec.svg" width={400} height={300} alt="a" />
       </Container>
 
-      {/* bordas com vinheta sutil para “fechar” a seção */}
+      {/* vinhetas sutis */}
       <div
         aria-hidden
         className="pointer-events-none absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black/10 to-transparent"

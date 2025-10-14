@@ -92,7 +92,7 @@ export default function Problem() {
           custom={0}
           className="mx-auto max-w-5xl"
         >
-          <H2 className="mb-30 text-brand-primary">{t("title")}</H2>
+          <H2 className="mb-30 text-white">{t("title")}</H2>
         </motion.div>
 
         <motion.div

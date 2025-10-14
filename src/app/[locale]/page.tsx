@@ -12,9 +12,9 @@ export default function Page() {
   return (
     <main>
       <Hero />
-      <Problem />
-      <SocialProof />
       <Guide />
+      <SocialProof />
+      <Problem />
       <ActionPlan />
       <About />
       <FinalCTA />
