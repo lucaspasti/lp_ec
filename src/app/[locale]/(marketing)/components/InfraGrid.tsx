@@ -44,12 +44,12 @@ export default function InfraGrid() {
         </div>
 
         {/* Grid with descriptions */}
-        <div className="relative z-10 grid gap-10 md:grid-cols-2 lg:grid-cols-4 text-left text-gray-800 dark:text-gray-200">
+        <div className="relative z-10 grid gap-10 md:grid-cols-2 lg:grid-cols-4 text-left text-gray-800 ">
           <div>
-            <h3 className="font-semibold text-gray-700 mb-3">
+            <h3 className="font-semibold mb-3 text-gray-700">
               {t("block1.title")}
             </h3>
-            <ul className="space-y-1 text-sm leading-relaxed text-gray-600">
+            <ul className="space-y-1 text-sm leading-relaxed text-gray-700">
               <li>{t("block1.item1")}</li>
               <li>{t("block1.item2")}</li>
               <li>{t("block1.item3")}</li>
@@ -59,10 +59,8 @@ export default function InfraGrid() {
           </div>
 
           <div>
-            <h3 className="font-semibold text-gray-700 mb-3">
-              {t("block2.title")}
-            </h3>
-            <ul className="space-y-1 text-sm leading-relaxed text-gray-600">
+            <h3 className="font-semibold mb-3">{t("block2.title")}</h3>
+            <ul className="space-y-1 text-sm leading-relaxed text-gray-700">
               <li>{t("block2.item1")}</li>
               <li>{t("block2.item2")}</li>
               <li>{t("block2.item3")}</li>
@@ -71,10 +69,8 @@ export default function InfraGrid() {
           </div>
 
           <div>
-            <h3 className="font-semibold text-gray-700 mb-3">
-              {t("block3.title")}
-            </h3>
-            <ul className="space-y-1 text-sm leading-relaxed text-gray-600">
+            <h3 className="font-semibold mb-3">{t("block3.title")}</h3>
+            <ul className="space-y-1 text-sm leading-relaxed text-gray-700">
               <li>{t("block3.item1")}</li>
               <li>{t("block3.item2")}</li>
               <li>{t("block3.item3")}</li>
@@ -83,10 +79,8 @@ export default function InfraGrid() {
           </div>
 
           <div>
-            <h3 className="font-semibold text-gray-700 mb-3">
-              {t("block4.title")}
-            </h3>
-            <ul className="space-y-1 text-sm leading-relaxed text-gray-600">
+            <h3 className="font-semibold mb-3">{t("block4.title")}</h3>
+            <ul className="space-y-1 text-sm leading-relaxed text-gray-700">
               <li>{t("block4.item1")}</li>
               <li>{t("block4.item2")}</li>
               <li>{t("block4.item3")}</li>
