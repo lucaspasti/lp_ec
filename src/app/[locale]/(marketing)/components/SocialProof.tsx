@@ -12,7 +12,7 @@ const EMPRESAS_COUNT = 27;
 // Gera: /empresas/CLIENTES_01.png ... /empresas/CLIENTES_27.png
 const logos = Array.from({ length: EMPRESAS_COUNT }, (_, i) => {
   const n = String(i + 1).padStart(2, "0");
-  return `/CLIENTES_${n}.png`;
+  return `/CLIENTEs_${n}.png`;
 });
 
 const logoNodes = logos.map((src, idx) => (
