@@ -87,7 +87,7 @@ export default function About() {
 
           {/* coluna da lista */}
           <div className="relative md:pl-8 xl:pl-12">
-            <div className="relative flex h-[440px] w-full flex-col overflow-hidden p-2 text-left">
+            <div className="relative flex h-[440px] w-full flex-col  p-2 text-left">
               {isInView ? (
                 <AnimatedList>
                   {bullets.map((b, i) => (

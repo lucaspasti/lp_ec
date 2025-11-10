@@ -100,8 +100,8 @@ export function Header() {
         }}
         className="text-2xl px-4 md:text-dm lg:text-md font-bold text-neutral-700 text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto"
       >
-        <Highlight className="text-white ">{t("title")}</Highlight>
-        <div>{t("subtitle")}</div>
+        <div className="text-black text-7xl">{t("title")}</div>
+        <div className="font-normal text-gray-600">{t("subtitle")}</div>
       </motion.h1>
     </HeroHighlight>
   );

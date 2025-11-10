@@ -13,7 +13,7 @@ const LOGOS = [
   { src: "/powerbi.png", alt: "Power BI" },
   { src: "/qgis.png", alt: "QGIS" },
   { src: "/autodesk.jpg", alt: "Autodesk" },
-  { src: "/autodesk_infraworks.png", alt: "Autodesk InfraWorks" },
+  { src: "/altoqi.png", alt: "altoqi" },
   { src: "/simul8.png", alt: "SIMUL8" },
   { src: "/visum.png", alt: "PTV Visum" },
   { src: "/ecdata_comp.png", alt: "ECData" },
@@ -44,7 +44,7 @@ const Circle = forwardRef<
     <div
       ref={ref}
       className={cn(
-        "z-10 flex size-16 items-center justify-center rounded-full border-2 bg-white p-3",
+        "z-10 flex size-24 items-center justify-center rounded-full border-2 bg-white p-3",
         "shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)]",
         className
       )}
@@ -90,7 +90,7 @@ const Example = () => {
       ref={containerRef}
       className={cn(
         "relative flex w-full items-center justify-center overflow-hidden p-6",
-        "h-[520px] md:h-[560px]"
+        "h-[620px] md:h-[560px]"
       )}
     >
       <div className="flex size-full max-w-5xl flex-col md:flex-row items-stretch justify-between gap-6 md:gap-10">

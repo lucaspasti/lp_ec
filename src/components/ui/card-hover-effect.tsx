@@ -22,7 +22,7 @@ export const HoverEffect = ({
         <a
           href={item?.link}
           key={item?.link || idx} // ✅ fallback para idx
-          className="relative group block p-2 h-full w-full border-1 rounded-3xl border-grey-500 bg-blue-900"
+          className="relative group block p-2 h-full w-full border-1 rounded-3xl border-grey-500 bg-gradient-to-b from-blue-300 to-blue-800 transition-colors duration-300"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >

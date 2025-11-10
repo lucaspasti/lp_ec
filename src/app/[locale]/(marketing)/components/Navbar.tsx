@@ -71,30 +71,6 @@ export function NavbarDemo() {
         {isMobileMenuOpen && (
           <div className="flex flex-col items-center gap-6 py-6 animate-fadeIn">
             {/* Links principais */}
-            <Link
-              href="/"
-              className="text-lg text-gray-800 hover:text-blue-600 transition-colors"
-            >
-              Início
-            </Link>
-            <Link
-              href="/sobre"
-              className="text-lg text-gray-800 hover:text-blue-600 transition-colors"
-            >
-              Sobre
-            </Link>
-            <Link
-              href="/servicos"
-              className="text-lg text-gray-800 hover:text-blue-600 transition-colors"
-            >
-              Serviços
-            </Link>
-            <Link
-              href="/contato"
-              className="text-lg text-gray-800 hover:text-blue-600 transition-colors"
-            >
-              Contato
-            </Link>
 
             {/* Divisor */}
             <div className="w-16 h-px bg-gray-300" />
