@@ -9,7 +9,7 @@ import {
   MotionValue,
 } from "motion/react";
 import { useTranslations } from "next-intl";
-import { HeroHighlight, Highlight } from "./hero-highlight";
+import { HeroHighlight } from "./hero-highlight";
 
 export const HeroParallax = ({
   products,
@@ -47,14 +47,14 @@ export const HeroParallax = ({
     springConfig
   );
   const translateY = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [-700, 100]),
+    useTransform(scrollYProgress, [0, 0.2], [-300, 100]),
     springConfig
   );
 
   return (
     <div
       ref={ref}
-      className="h-[135vh] overflow-hidden antialiased relative flex flex-col self-auto 
+      className="h-auto md:h-[135vh] overflow-hidden antialiased relative flex flex-col self-auto 
       [perspective:700px] [transform-style:preserve-3d]
       bg-white"
     >
@@ -67,7 +67,7 @@ export const HeroParallax = ({
           opacity,
         }}
       >
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-5">
+        <motion.div className="flex flex-col items-center md:flex-row-reverse md:space-x-reverse md:space-x-20 space-y-10 md:space-y-0 mb-5">
           {firstRow.map((product) => (
             <ProductCard
               product={product}
@@ -100,7 +100,7 @@ export function Header() {
         }}
         className="text-2xl px-4 md:text-dm lg:text-md font-bold text-neutral-700 text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto"
       >
-        <div className="text-black text-7xl">{t("title")}</div>
+        <div className="text-black text-5xl md:text-7xl">{t("title")}</div>
         <div className="font-normal text-gray-600">{t("subtitle")}</div>
       </motion.h1>
     </HeroHighlight>
@@ -127,7 +127,7 @@ export const ProductCard = ({
         y: -20,
       }}
       key={product.title}
-      className="group/product h-96 w-[30rem] relative shrink-0 border-1 rounded-xl border-blue-700"
+      className="group/product h-96 w-[90%] md:w-[30rem] relative shrink-0 border-1 rounded-xl border-blue-700"
     >
       <a
         href={product.link}
